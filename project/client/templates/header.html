@@ -1,0 +1,31 @@
+<style type="text/css">
+.nav-item a:hover{
+    color: rgb(54, 237, 194);
+}
+</style>
+<!-- Navigation -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+  <div class="container">
+    <!-- Navbar Brand -->
+    <a class="navbar-brand" href="{{ url_for('main.home') }}">
+      <img src="{{ url_for('static', filename='img/logo-transparent.png') }}" alt="logo" class="image-responsive"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- Main Navigation -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('main.meteor') }}" onmouseover="this.style.color='#36edc2'" onmouseout="this.style.color='#cccdcf'" style="font-size:0.8rem">Logiciel METEOR</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('main.guide') }}" onmouseover="this.style.color='#36edc2'" onmouseout="this.style.color='#cccdcf'" style="font-size:0.8rem">Manuel d'utilisation</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('main.dev') }}" onmouseover="this.style.color='#36edc2'" onmouseout="this.style.color='#cccdcf'" style="font-size:0.8rem">Contribuez</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

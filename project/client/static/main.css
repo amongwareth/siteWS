@@ -1,0 +1,97 @@
+/* custom css */
+
+.title h2 {
+    font-weight: normal;
+}
+
+.site-content {
+  padding-top: 6rem;
+}
+
+.navbar-collapse a:hover{
+    color:rgb(54, 237, 194);
+}
+.content{
+    width: 100%;
+}
+
+.content a{ 
+    color: blue;
+}
+
+.bio{
+    width: 40%;
+    float: right;
+    padding: 2ex;
+    border-radius: 2ex;
+    background-color: rgb(247, 245, 220);
+}
+
+.subtitlebob{
+    padding-bottom:1ex;
+    padding-top:1ex;
+}
+
+.bio-container{
+    display: block;
+    width: 100%;
+    -webkit-flex-direction: row; 
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+
+}
+
+.pict{
+    width:31%;
+    float: left;
+    padding: 1ex;
+}
+
+.bio-text{
+    width: 65%;
+    float: right;
+    padding: 1ex;
+    padding-left: 4ex;
+    font-size: 1.5ex;
+}
+
+.description{
+    width: 57%;
+    float: left;
+    padding: 2ex;
+    border-radius: 2ex;
+    background-color: rgb(247, 245, 220);
+    margin-bottom:10ex;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.teamname {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}

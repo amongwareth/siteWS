@@ -1,0 +1,47 @@
+{% extends "_base.html" %}
+{% block page_title %} - Contribuez{% endblock %}
+{% block content %}    
+
+            <h4>Contribuez au développement de METEOR</h4>
+<br>
+      <div>
+            <p>METEOR est un logiciel open source, vous pouvez donc participer activement à son développement.</p>
+            <ul>
+            <li>Comment signaler ou corriger un bug ?
+                <ol>
+                    <li>Aller sur la page principale du dépôt github contenant le bug.</li>
+                    <li>Sous le nom du dépôt, cliquer sur "Issues"</li>
+                    <li>Cliquer sur le bouton vert intitulé "New Issue"</li>
+                    <li>Entrez le titre et une description du bug</li>
+                    <li>Lorsque vous avez fini, cliquez sur "Submit new issue"</li>
+                </ol>
+            </li><br>
+
+            <li>Comment proposer une amélioration ?
+                <ol>
+                    <li>Commencez par cloner le dépôt qui vous intéresse</li>
+                    <li>Créez localement une nouvelle branche et faites vos modifications dedans</li>
+                    <li>Lorsque vous êtes satisfait de vos modifications, committez et pushez les sur votre dépôt cloné.</li>
+                    <li>Naviguez sur le dépôt original</li>
+                    <li>Dans l'onglet de base (Code), à droite des branches, cliquez sur "New pull request" </li>
+                    <li>Sur la page "Compare", cliquez sur "compare across forks"</li>
+                    <li>La "base fork" doit être le dépôt dans lequel vous souhaitez introduire vos modifications.
+                        Utilisez le menu déroulant "branch" pour choisir la branche dans laquelle vous souhaitez
+                        fusionner vos modifications</li>
+                    <li>La "head fork" doit être le dépôt cloné dans lequel vous avez fait vos modifications.
+                        Utilisez le menu déroulant "branch" pour choisir la branche dans laquelle vous avez réalisé vos
+                        modifications</li>
+                    <li>Entrez le titre et la description de vos modifications</li>
+                    <li>Cliquez sur "Create pull request"</li>
+                </ol>
+            </li> <br>
+            <li>Comment proposer une intégration avec un outil ou logiciel existant ?
+                <ol>
+                    <li>Vous pouvez suivre les mêmes indications que ci dessus pour proposer une amélioration</li>
+                    <li>Dans le cas d'un besoin spécifique, vous pouvez nous contacter
+                        <a href="{{ url_for('main.contact') }}">ici</a></li>
+                </ol>
+            </li>
+            </ul>
+      </div>
+{% endblock content %}    

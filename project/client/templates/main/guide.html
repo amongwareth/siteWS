@@ -1,0 +1,44 @@
+{% extends "_base.html" %}
+{% block page_title %} - Manuel d'utilisation{% endblock %}
+{% block content %}  
+
+            <h4>Approche</h4>        
+<br>
+<div>
+	    Nous voulons permettre aux territoires et aux acteurs de l'énergie d'internaliser les compétences de planification énergétique territoriale et de réalisation de scénarios prospectifs en proposant un outil plus rapide et ouvert.
+<br><br>
+    Sur les questions énergétiques, nous sommes convaincus qu'un outil territorialisé centralisant une modélisation
+    complète du système énergétique, quitte à ce que certains secteurs soient modélisés de façon moins détaillée que
+    par un spécialiste métier, a plus de valeur dans la plupart des cas qu'une juxtaposition de systèmes experts
+    puisqu'il permet d'étudier les interactions entre chaque secteur et chaque vecteur.
+    <br><br>
+
+    Pour que ce soit le cas, nous pensons qu'un tel outil doit permettre de tenir compte :
+    <ul>
+        <li>de chaque secteur (résidentiel, tertiaire, industrie...)</li>
+        <li>de chaque vecteur énergétique (électricité, gaz, fioul...)</li>
+        <li>de la dynamique horaire</li>
+        <li>de la météo</li>
+        <li>de l'équilibre entre offre et demande</li>
+    </ul>
+
+Ce sont ces principes qui nous guident et que nous avons intégrés à METEOR. 
+</div>
+<br>   
+
+            <h4>Méthodologie et sources de données pour le moteur de calcul</h4>
+<br>
+<div>
+	<ul>
+    <li>Méthodologie et principale source des données : [<a href="{{ url_for('static', filename='pdf/note_methodologique.pdf') }}" target="_blank">pdf</a>]</li>
+    <li>Note concernant la modélisation de l'équilibre offre-demande électrique : [<a href="{{ url_for('static', filename='pdf/MethodoWS.pdf') }}" target="_blank">pdf</a>]</li></ul>
+</div>
+<br>
+            <h4>Manuel d'utilisation de l'interface web</h4>
+<br>
+<div>
+	<ul>
+    <li>Comment naviguer dans l'interface de l'application Web :[]</li></ul>
+</div>
+
+{% endblock content %}    

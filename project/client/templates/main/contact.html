@@ -1,0 +1,30 @@
+{% extends "_base.html" %}
+{% block page_title %} - Contact{% endblock %}
+{% block content %}
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+<div class="body-content">
+    <div>
+        <h1>Contactez-nous</h1>
+        <hr><br>
+    </div>
+</div>
+             <center>
+<br><br>
+    <form method="POST">
+      <div class = "form-group">
+        <input type="email" size="35" name = "sender" placeholder="Votre email" required>
+        <br><br>
+        <textarea rows="4" cols="50" name="message" placeholder="Votre message" required></textarea>
+        <br><br>
+        <div class="g-recaptcha" data-sitekey="6Le-44UUAAAAAPxodh00X1HDZkiBFz8sRp31d06z"></div>
+      </div>
+      <input class="btn btn-primary" type="submit" value="Envoyer">
+    </form>
+    <br>
+{{info}}
+</center>
+{% endblock %}
+
+
+
